@@ -2,7 +2,6 @@ FOCUS Dimension,Transform Step,Source Column,Source Column Type,Transform Type,F
 BillingAccountName,0,Not Defined,Not Defined,Not Defined,Not Defined
 ChargeCategory,0,Not Defined,Not Defined,Not Defined,Not Defined
 CommitmentDiscountName,0,Not Defined,Not Defined,Not Defined,Not Defined
-SubAccountId,0,Not Defined,Not Defined,Not Defined,Not Defined
 SubAccountName,0,Not Defined,Not Defined,Not Defined,Not Defined
 AvailabilityZone,1,lineItem/AvailabilityZone,Not Defined,RENAME_COLUMN,
 BilledCost,1,NA,Not Defined,SQL_CONDITION,"conditions:
@@ -125,5 +124,6 @@ SkuPriceId,1,NA,Not Defined,SQL_CONDITION,"conditions:
 - WHEN ""pricing/RateCode"" is not null THEN ""pricing/RateCode""
 default_value: '""pricing/RateId""'
 "
+SubAccountId,1,lineItem/UsageAccountId,Not Defined,RENAME_COLUMN,
 UsageQuantity,1,lineItem/UsageAmount,Not Defined,RENAME_COLUMN,
 UsageUnit,1,pricing/unit,Not Defined,RENAME_COLUMN,
